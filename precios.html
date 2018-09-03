@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <title>Precios de tus mejores guitarras</title>
+  </head>
+  <body class="precios">
+    <!--  se agrega esta clase con el fin de no afectar a la pagina principal, es decir
+  solo queremos que se afecte esta pagina -->
+    <header id="header" class="header  background"> <!-- header -->
+      <div class="contenedor">
+        <figure class="logotipo"> <!-- logotipo -->
+          <img src="images/invie.png" width="186" height="60" alt="Invie logotipo"/>
+        </figure>
+        <span class="burguer-button icon-menu active" id="burguer-button"></span>
+        <nav class="menu" id="menu"> <!-- menu -->
+          <ul>
+            <li><a href="invie.html">Home</a></li>
+            <li><a href="invie.html#guitarras">Guitarras</a></li>
+            <li><a href="precios.html">Precios</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+
+    <section class="tabla">
+      <div class="contenedor">
+        <table >
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Precio</th>
+              <th>Descripción</th>
+              <th>Modelo</th>
+              <th>Precio</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Invie Acustica</td>
+              <td>$xxxxx</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              <td>Invie Acustica</td>
+              <td>$xxxxx</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+            </tr>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$xxxxxx</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              <td>Invie Classic</td>
+              <td>$xxxxxx</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+            </tr>
+            <tr>
+              <td>Invie Custom</td>
+              <td>$xxxxx</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              <td>Invie Custom</td>
+              <td>$xxxxx</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="logotipo blanco">
+          <a href="tel:+573162804357"><strong>Telefono</strong><span>3162804357</span></a>
+          <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" required id="nombre" name="nombre"/>
+            <!--  el atributo: "for" de la etiqueta label, junto al atributo "id" de la etiqueta input hace que se genere un efecto de foco dentro de la caja de input -->
+            <label for="email">E-mail</label>
+            <input type="email" required id="email"name="email"/>
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" id="mujer" name="sexo"/>mujer
+              </label>
+              <!--  el atributo name sirve para identificar que campo del formulario es el que estoy enviando y con que valor. Es decir, permite identificar solo uno de los dos valores, lo que quiere decir que no es de selección múltiple. -->
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" />hombre
+                <!--  para volver el input type="radio" de selección múltiple, le quitamos el atributo name -->
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" checked="checked" id="cotizacion" name="intereses" value="cotizacion">Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="interese" value="otros">Otros
+              </label>
+
+            </div>
+
+          </div>
+
+          <div class="col2">
+            <label for="comentario">Comentarios</label>
+            <textarea name="comentarios" id="comentario"rows="7" cols="30"></textarea>
+            <input type="submit" value="enviar" class="button">
+          </div>
+        </form>
+      </div>
+
+
+    </footer>
+    <script>
+    var $burguerButton = document.getElementById("burguer-button");
+    var $menu = document.getElementById("menu");
+
+    $burguerButton.addEventListener("touchstart", toggleMenu);
+
+    function toggleMenu(){
+      $menu.classList.toggle("active");
+      $burguerButton.classList.toggle("icon-close");
+    };
+    </script>
+
+  </body>
+</html>

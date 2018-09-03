@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <title>Invie - tus mejores guitarras</title>
+  </head>
+  <body>
+
+    <section id="portada" class="portada background"> <!-- portada -->
+      <header id="header" class="header contenedor"> <!-- header -->
+         <figure class="logotipo"> <!-- logotipo -->
+           <img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie logotipo"/>
+         </figure>
+         <span class="burguer-button icon-menu active" id="burguer-button"></span>
+         <nav class="menu" id="menu"> <!-- menu -->
+           <ul>
+             <li><a href="invie.html">Home</a></li>
+             <li><a href="#guitarras">Guitarras</a></li>
+             <li class="c"><a href="precios.html">Precios</a></li>
+           </ul>
+         </nav>
+      </header>
+      <div class="contenedor">
+        <h1 class="titulo">Guitarras <span>invie</span>sibles</h1> <!-- titulo -->
+        <h3 class="title-1">Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
+        <a class="button" href="#guitarras">Conoce más</a> <!-- boton -->
+      </div>
+    </section>
+    <section id="guitarras" class="guitarras contenedor"> <!-- guitarras -->
+      <h2>Nuestras guitarras</h2><!-- Título -->
+      <div class="video-demo-contenedor">
+        <div class="video-demo">
+          <div class="video-responsive-contenedor">
+            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/WzdBK2-0rWY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!--  enlace para allar la proporción de un video insertado de manera externa:
+     http://embedresponsively.com/ -->
+      <!--  la proporción del video es de 16:9, que debe tenerse en cuenta para hacer
+            video responsive  -->
+      <!-- videos en full hd 1920x1980 que también es una proporción 16:9 -->
+      <!-- <video src="video/320x240.ogg"></video>
+      la proporción del video es 4:3  -->
+      <article class="guitarra"> <!-- guitarra 1 -->
+        <img class="derecha" data-src="images/invie-acustica.png | images/invie-acustica2x.png" alt="Guitarra Invie Acustica" width="350"/>
+
+        <div class="contenedor-guitarra-a">
+          <h3 class="title-2">Invie Acustica</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Madera pura</li>
+            <li>incluye estuche invisible de aluminio</li>
+          </ol>
+        </div>
+      </article> <!-- guitarra 2 -->
+      <article class="guitarra b">
+        <img class="izquierda" data-src="images/invie-classic.png|images/invie-classic2x.png" alt="Guitarra Invie Classic" width="350"/>
+        <div class="contenedor-guitarra-b">
+          <h3 class="title-2">Invie Classic</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Liviana</li>
+            <li>Inicia tu camino como RockStar</li>
+          </ol>
+        </div>
+      </article>
+      <div class="fixed">
+        Hola! No me prestes atención todavía
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img data-src="images/invie-white.png | images/invie-white2x.png" alt="logotipo blanco">
+          <a href="tel:+573162804357"><strong>Telefono</strong><span>3162804357</span></a>
+          <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" required id="nombre" name="nombre"/>
+            <!--  el atributo: "for" de la etiqueta label, junto al atributo "id" de la etiqueta input hace que se genere un efecto de foco dentro de la caja de input -->
+            <label for="email">E-mail</label>
+            <input type="email" required id="email"name="email"/>
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" id="mujer" name="sexo"/>mujer
+              </label>
+              <!--  el atributo name sirve para identificar que campo del formulario es el que estoy enviando y con que valor. Es decir, permite identificar solo uno de los dos valores, lo que quiere decir que no es de selección múltiple. -->
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" />hombre
+                <!--  para volver el input type="radio" de selección múltiple, le quitamos el atributo name -->
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" checked="checked" id="cotizacion" name="intereses" value="cotizacion">Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="interese" value="otros">Otros
+              </label>
+
+            </div>
+
+          </div>
+
+          <div class="col2">
+            <label for="comentario">Comentarios</label>
+            <textarea name="comentarios" id="comentario"rows="7" cols="30"></textarea>
+            <input type="submit" value="enviar" class="button">
+          </div>
+        </form>
+      </div>
+
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script>
+      var consulta = window.matchMedia("(max-width: 800px)");
+      consulta.addListener(mediaQuery);
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          // si se cumple hagamos estoy
+          console.log("se cumplió la condición");
+        } else {
+          // si no se cumple hagamos esto
+          console.log("no se cumplio la condición");
+        }
+      }
+
+
+      var $burguerButton = document.getElementById("burguer-button");
+      var $menu = document.getElementById("menu");
+
+      $burguerButton.addEventListener("touchstart", toggleMenu);
+
+      function toggleMenu(){
+        $menu.classList.toggle("active");
+        $burguerButton.classList.toggle("icon-close");
+
+      };
+      function ShowMenu(){
+        $menu.classList.add("active");
+        $burguerButton.classList.add("icon-close");
+      };
+      function hideMenu(){
+        $menu.classList.remove("active");
+        $burguerButton.classList.remove("icon-close");
+      };
+
+
+
+
+      // Be lazy
+      var bLazy = new Blazy({
+    // options
+      selector: "img"
+      });
+      // Gestos touch
+      var $body = document.body;
+
+      var gestos = new Hammer($body);
+      gestos.on('swipeleft', hideMenu);
+      gestos.on('swiperight', ShowMenu);
+      // la forma de escuchar eventos dentro de Hammer (o gestos) es con .on
+      // para buscar las lineas de codigo que llamen a la libreria: Hammer:
+      // http://hammerjs.github.io/getting-started/
+
+      // para buscar la libreria Hammer: cdnjs.com
+    </script>
+  </body>
+</html>
+<!-- etiqueta a: tambien se puede definir como ancla, la cual me lleva a
+otro sitio de la página o a otra pagina web -->
+<!--  <meta charset="utf-8": permite que los sitios web soporten los caracteres
+especiales de algunos idiomas -->
